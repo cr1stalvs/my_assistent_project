@@ -19,13 +19,28 @@ pip install -r requirements.txt
 
 
 ## Настройка окружения
+* bot.py — код бота
+* db.py — код для работы с базой данных
+* speechkit.py — код для работы со SpeechKit
+* yandex_gpt.py — код для работы с YandexGPT
+* validators.py — файл, в который можно вынести функции для проверки лимитов (по желанию)
+* config.py — файл для хранения полезных констант проекта
+* creds.py — директория для хранения данных учётной записи
+
+## Вспомогательные файлы для добавления в репозиторий:
+*requirements.txt — список зависимостей проекта*
+
+*.gitignore — список файлов, которые не нужно загружать на Гитхаб*
+
+*Readme.md — описание проекта*
+
 Создайте файл .env в корневом каталоге с следующими переменными:
-TELEGRAM_TOKEN: Токен вашего Telegram-бота.
+TOKEN: Токен вашего Telegram-бота.
 FOLDER_ID: ID папки в Yandex Cloud.
 IAM_TOKEN: IAM токен Yandex Cloud.
 Загрузите эти переменные в вашем приложении, используя:
 from dotenv import load_dotenv import os load_dotenv() 
-TOKEN = os.getenv("TELEGRAM_TOKEN")
+TOKEN = os.getenv("TOKEN")
 
 ## Использование
 Запустите бота, выполнив главный скрипт:
