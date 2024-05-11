@@ -8,9 +8,10 @@ from yandex_gpt import ask_gpt  # модуль для работы с GPT
 from speechkit import speech_to_text, text_to_speech  # модуль для работы с STT
 from config import TOKEN, LOGS, COUNT_LAST_MSG, ADMINS_IDS # подтягиваем инфу из config-файл
 from db import create_database, add_message, select_n_last_messages # подтягиваем функции из database файла
-# from creds import get_bot_token  # модуль для получения bot_token
 
+# from creds import get_bot_token  # модуль для получения bot_token
 # bot = telebot.TeleBot(get_bot_token())  # создаём объект бота
+
 bot = telebot.TeleBot(TOKEN) # создаем бота
 
 # Настраиваем запись логов в файл

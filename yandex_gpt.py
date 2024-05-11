@@ -2,11 +2,10 @@ import requests  # модуль для отправки HTTP-запросов
 
 import logging  # модуль для сбора логов
 
-# from creds import get_creds  # модуль для получения токенов
-
 # подтягиваем инфу из config файла
 from config import LOGS, MAX_GPT_TOKENS, SYSTEM_PROMPT, GPT_URL, TOKENIZE_URL, GPT_MODEL, IAM_TOKEN, FOLDER_ID
 
+# from creds import get_creds  # модуль для получения токенов
 # iam_token, folder_id = get_creds()  # получаем iam_token и folder_id из файлов
 
 

@@ -6,7 +6,6 @@ from config import IAM_TOKEN, LOGS, FOLDER_ID  # подтягиваем инфу
 
 # from creds import get_creds  # модуль для получения токенов
 
-
 # iam_token, folder_id = get_creds()  # получаем iam_token и folder_id из файлов
 
 # Настраиваем запись логов в файл
