@@ -4,9 +4,10 @@ import logging # модуль для сбора логов
 
 from config import IAM_TOKEN, LOGS, FOLDER_ID  # подтягиваем инфу из config-файла
 
-from creds import get_creds  # модуль для получения токенов
+# from creds import get_creds  # модуль для получения токенов
 
-iam_token, folder_id = get_creds()  # получаем iam_token и folder_id из файлов
+
+# iam_token, folder_id = get_creds()  # получаем iam_token и folder_id из файлов
 
 # Настраиваем запись логов в файл
 logging.basicConfig(filename=LOGS, level=logging.DEBUG,

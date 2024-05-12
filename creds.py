@@ -11,7 +11,7 @@ from config import LOGS, IAM_TOKEN, FOLDER_ID, TOKEN
 logging.basicConfig(filename=LOGS, level=logging.INFO,
                     format="%(asctime)s FILE: %(filename)s IN: %(funcName)s MESSAGE: %(message)s", filemode="a")
 
-# получение нового iam_tokenЭ
+# получение нового iam_token
 def create_new_token():
     url = "http://169.254.169.254/computeMetadata/v1/instance/service-accounts/default/token"
     headers = {
